@@ -1,0 +1,40 @@
+{
+  "name": "e-education-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "npm run dev",
+    "prod": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meitix/e-education-fe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meitix/e-education-fe/issues"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "homepage": "https://github.com/meitix/e-education-fe#readme",
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/mongoose": "^5.7.13",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.8.3"
+  }
+}
