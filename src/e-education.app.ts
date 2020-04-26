@@ -3,7 +3,7 @@ import { connect, set } from 'mongoose';
 import cors from 'cors';
 import { apiRouter } from './routes';
 
-export class ToRooheSoheil {
+export class Education {
   private app: express.Express;
   private get publicFolder(): string {
     return '/public/dist/class-management-fe';
@@ -30,7 +30,10 @@ export class ToRooheSoheil {
       set('useFindAndModify', false);
       set('useCreateIndex', true);
       // connect to database.
-      connect(dbConnectionString, { useNewUrlParser: true, useUnifiedTopology: true}).then(() =>
+      connect(dbConnectionString, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }).then(() =>
         console.log(
           `connected to mongo db with ${dbConnectionString} connection string.`
         )

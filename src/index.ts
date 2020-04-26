@@ -1,8 +1,8 @@
-import {ToRooheSoheil} from './e-education.app';
+import { Education } from './e-education.app';
 import dotenve from 'dotenv';
 
 dotenve.config();
 
-const sag = new ToRooheSoheil();
+const app = new Education();
 
-sag.start(process.env.PORT || 3000, <string>process.env.DB);
+app.start(process.env.PORT || 3000, <string>process.env.DB);
